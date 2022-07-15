@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strconv"
 
-	"main.go/blockchain"
+	"github.com/minghinmatthewlam/learnBlockChain/blockchain"
 )
 
 func main() {
