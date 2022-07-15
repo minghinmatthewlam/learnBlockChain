@@ -22,7 +22,6 @@ func NewProofOfWork(b *Block) *ProofOfWork {
 	target.Lsh(target, uint(256-Difficulty))
 
 	pow := &ProofOfWork{b, target}
-
 	return pow
 }
 

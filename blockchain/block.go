@@ -1,5 +1,7 @@
 package blockchain
 
+import "github.com/minghinmatthewlam/learnBlockChain/utils"
+
 type Block struct {
 	Hash     []byte
 	Data     []byte
@@ -18,6 +20,11 @@ func CreateBlock(data string, prevHash []byte) *Block {
 
 	block.Hash = hash[:]
 	block.Nonce = nonce
+	p := utils.Person{
+		Name: "TESTNAME",
+		Age:  23,
+	}
+	go p.PrintInfo()
 
 	return block
 }
